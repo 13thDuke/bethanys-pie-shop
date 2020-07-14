@@ -2,7 +2,7 @@
 <html>
     <head> <!-- The header of the page containing important information-->
         <meta charset="utf-8">
-        <title>Welcome to Bethany's Pie Shop</title> <!-- Page title used for the tab name in browsers and search results-->
+        <title>Pies | Bethany's Pie Shop</title> <!-- Page title used for the tab name in browsers and search results-->
         <meta name="author" content="Simeon Brewer & Gill Cleerens">
         <meta name="description" content="Store front for Bethany's Pie Shop (Demo from Pluralsight Course Building Websites with HTML">
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!--important for websites that need responsive layout -->
@@ -16,34 +16,66 @@
     <body> 
         <header id="mainheader">
             <nav>
-                <ul>
+                <ul> <!-- Use a list because of semantic markup - easier for search engines-->
                     <li><img src="images/cake.svg" height=55/></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pieoverview.html">All Pies</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
+                <input type="search" class="searchbox" placeholder="Search our store" />
             </nav>
         </header>
 
-        <div style="width:1000px;margin-left: auto;margin-right: auto;">
+        <div id="mainbody">
             <aside id="leftmenu">
-                <a href="index.html"><img src="images/bethanylogo.png" /></a>
+                <a href="index.html"><img src="images/bethanylogo.png" alt="Bethany's Pie Shop Logo"/></a>
                 <header>
-                    <h4 style="text-align: center;">Browse our pies</h4>
+                    <h4 style="text-align: center;">Browse our site</h4>
                 </header>
                 <ul>
-                    <li><a href="pieoverview.html">All pies</a></li>
-                    <li><a href="cheesecakes.html">Cheesecakes</a></li>
-                    <li><a href="fruitpies.html">Fruit pies</a></li>
-                    <li><a href="seasonalpies.html">Seasonal pies</a></li>
-                    <li><a href="about.html">About us</a></li>
+                <li><a href="pieoverview.html">All pies</a></li>
+                <li><a href="cheesecakes.html">Cheesecakes</a></li>
+                <li><a href="fruitpies.html">Fruit pies</a></li>
+                <li><a href="seasonalpies.html">Seasonal pies</a></li>
+                <li><a href="about.html">About us</a></li>
                 </ul>
-                <input type="search" class="searchbox" placeholder="Search our store" />
             </aside>
             
             <main id="main">
+                <header>
+                    <h1 style="font-size: 2.5em;margin-top: 0.2em; margin-bottom: 0.2em; color: #a593c2;">Order Your Pie Here</h1>
+                </header>
+                <article>
+                    <section class="columns-desktop">
+                        <div class="pie">
+                            <img src="images/products/apple-pie-thumb.png" alt="Apple Pie" />
+                            <div class="columns">
+                              <div class="title">Apple Pie</div>
+                              <div class="price">$12.95</div>
+                            </div>
+                            <p class="desc">Our famous apple pie</p>
+                            <button data-order="apple-pie">Order</button>
+                          </div>
+
+                          <div class="pie">
+                            <img src="images/products/cherry-pie-thumb.png" alt="Chery Pie" />
+                            <div class="columns">
+                              <div class="title">Cherry Pie</div>
+                              <div class="price">$15.95</div>
+                            </div>
+                            <p class="desc">A summer classic!</p>
+                            <button data-order="cherry-pie">Order</button>
+                          </div>
+
+                    </section>
+
+                </article>
+
+                <br/>
+
                 <table border="1">
-                    <caption>
-                        The delicious selection of pies for you to choose from
+                    <caption style="font-size: 2em;margin-top: 0.2em; margin-bottom: 0.2em; color: #a593c2; text-align: left;">
+                        Browse our full range of pies
                     </caption>
                     <thead>
                         <tr>
@@ -138,14 +170,15 @@
                 </tbody>
                 </table>
             </main>
-            <footer>
-                <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
-                </p>
-                <p>Contact us via: <a href="mailto:info@bethanypieshop.com">email</a></p>
-                <small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small>
-                <p><small><a href="https://www.snowball.be">Built using Snowball</a></small></p>
-            </footer>
         </div>
+
+        <footer>
+            <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+            </p>
+            <p>Contact us via: <a href="mailto:info@bethanypieshop.com">email</a></p>
+            <small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small>
+            <p><small><a href="https://www.snowball.be">Built using Snowball</a></small></p>
+        </footer>
 
     </body>
 </html>
