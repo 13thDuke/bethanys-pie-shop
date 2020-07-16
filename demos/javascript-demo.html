@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("Building Websites with HTML, CSS & JavaScript: Getting Started, Module 7")
+
+        /*
+        // Variables & Block Scope
+        let name = "Simeon";
+        {
+        let name = "Brewer";
+        console.log(name);
+        }
+        console.log(name);
+        */
+
+        /*
+        // if statements
+        let name = "Frank";
+
+        if (name === "Simeon") {
+            console.log("Hi " + name);
+        }
+
+        else if (name === "Frank") {
+            console.log("What's happening, Frank?");
+        }
+
+        else {
+            console.log("Hey - where's Simeon?");
+        }
+        */
+
+        // Basic Functions
+        /*
+        function greet () {
+
+            let name = "Frank";
+
+            if (name === "Simeon") {
+                console.log("Hi " + name);
+            }
+
+            else if (name === "Frank") {
+                console.log("What's happening, Frank?");
+            }
+
+            else {
+                console.log("Hey - where's Simeon?");
+            }
+
+        }
+
+        greet();
+        */
+
+        // Function Arguments
+        /*
+
+        function greet (name) {
+
+            if (name === "Simeon") {
+                console.log("Hi " + name);
+            }
+
+            else if (name === "Frank") {
+                console.log("What's happening, Frank?");
+            }
+
+            else {
+                console.log("Hey - where's Simeon?");
+            }
+
+        }   
+        
+        greet("Simeon");
+        greet("Frank");
+        greet("Jeff");
+
+        let fname = "Simeon";
+
+        greet(fname);
+
+        */
+
+        // Function Return Values
+        /*
+        function greet() {
+            return "Hello";
+        }
+
+        let message = greet();
+        console.log(message);
+        */
+
+        /*
+        function greet (name) {
+
+            let result = " ";
+
+            if (name === "Simeon") {
+                result = "Hi Simeon";
+            }
+
+            else if (name === "Frank") {
+                    result = "What's happening, Frank?";
+            }
+
+            else {
+                    result = "Hey - where's Simeon?";
+            }
+            return result;
+            }
+
+        let message = greet("Simeon");
+        console.log(message);
+
+        */
+        
+        // Objects
+        /*
+        let person = {
+            firstName: "Simeon",
+            lastName: "Brewer",
+            twitter: "@SimeonBrewer",
+            greet: function() {
+                console.log("Hello " + this.firstName);
+            }
+        };
+
+        person.greet();
+        console.log(person.twitter);
+        */
+
+        // Arrays
+        /*
+        let demoArray = [1, 2, 3, 4];
+        let demoArray2 = ["Simeon", true, 100];
+
+        console.log(demoArray2[0]);
+
+        demoArray2.reverse();
+        console.log(demoArray2[0]);
+
+        let length = demoArray2.length;
+        console.log(length);
+
+        demoArray2.push("New Item")
+
+        let length2 = demoArray2.length;
+        console.log(length2);
+        */
+
+        //While loops
+        /*
+
+        let count = 0;
+        let max = 10;
+
+        while(count < max) {
+            console.log(count);
+            count++;
+        }
+        */
+
+        //For Loops
+        /*
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+        }
+
+        let numbers = [1, 2, 3];
+
+        for (let i = 0; i < numbers.length; i++) {  
+            console.log(i);
+        }
+        */
+
+        //For Each
+
+        let days = ["mon", "tue", "wed"];
+
+        days.forEach(function(day, index) {
+            console.log(`day: ${day}, index: ${index}`);
+        });
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
